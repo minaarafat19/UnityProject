@@ -53,9 +53,9 @@ ModelImporter:
       loopBlendPositionY: 1
       loopBlendPositionXZ: 1
       keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
+      keepOriginalPositionY: 0
       keepOriginalPositionXZ: 0
-      heightFromFeet: 0
+      heightFromFeet: 1
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
@@ -529,18 +529,18 @@ ModelImporter:
         length: 0
         modified: 0
     skeleton:
-    - name: Ch30_nonPBR@Zombie Walk(Clone)
+    - name: ZombieWALK(Clone)
       parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Ch30
-      parentName: Ch30_nonPBR@Zombie Walk(Clone)
+      parentName: ZombieWALK(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamorig:Hips
-      parentName: Ch30_nonPBR@Zombie Walk(Clone)
+      parentName: ZombieWALK(Clone)
       position: {x: 0.0034421699, y: 1.0079851, z: -0.0099974405}
       rotation: {x: -0, y: -0, z: 0.0000000014551913, w: 1}
       scale: {x: 1, y: 0.99999994, z: 1}
