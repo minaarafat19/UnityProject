@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-namespace JanoScript
-{
+
+
 
 
     public class EnemyAI : MonoBehaviour
     {
 
-        [SerializeField] private GameObject player;
+        [SerializeField] public GameObject player;
         [SerializeField] private Animator animator;
 
 
@@ -81,4 +81,4 @@ namespace JanoScript
 
     }
 
-}
+
