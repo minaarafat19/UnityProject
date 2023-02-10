@@ -7,7 +7,7 @@ public class HealthPlayer : MonoBehaviour
 
     [SerializeField] float maxHealth = 100;
 
-    float currentHealth;
+    [SerializeField] float currentHealth;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +22,8 @@ public class HealthPlayer : MonoBehaviour
         if(currentHealth <= 0)
         {
             Debug.Log("Dead");
+            //Debug.Log(currentHealth);
+            //instantiate losecanvas getcomponent gameoverUI
         }
 
     }
