@@ -56,7 +56,7 @@ using UnityEngine.AI;
                     // JE RESET LE TEMPS A ZERO
                     t = 0;
                 }
-
+                
             }
         }
 

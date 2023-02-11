@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
    float score;
    public static bool gameOver;
    public static bool winScreen; 
+   float currentHealth;
    [SerializeField]
    Text scoreText;
 
@@ -25,17 +26,23 @@ public class GameManager : MonoBehaviour
        
    }
 
-   
 
    private void Update()
    {
+     
+        //var tt = GetComponent<HealthPlayer>();
+        //tt.currentHealth = currentHealth;
+       //go.GetComponent<EnemyAI>().player = player;
+       // Debug.Log("testing!");
+        //Debug.Log(currentHealth);
+      
        if(gameOver)
        {
+          // Debug.Log("gme over ");
            gameOverUi.SetActive(true);
        }
         
        
-      
    }
 
 

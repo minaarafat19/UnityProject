@@ -2,11 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
+
 
 public class Pistol : MonoBehaviour
 {
     [SerializeField] GameObject firepoint;
     [SerializeField] float pistolDamage = 15f;
+     public GameObject WinUi;
+     
+     public static bool winScreen; 
+     float score;
+    [SerializeField] TextMeshProUGUI scoreText;
+
 
     [SerializeField] GameObject hitFxPrefab;
 
@@ -14,6 +22,7 @@ public class Pistol : MonoBehaviour
 
     [SerializeField] TextMeshProUGUI currentAmmoUI;
     [SerializeField] TextMeshProUGUI maxAmmoUI;
+    
 
     int currentBullet;
 
@@ -72,6 +81,20 @@ public class Pistol : MonoBehaviour
             eh.TakeDamage(pistolDamage, hitInfo.collider.gameObject);
         }
 
+
+    }
+    public void AddScore(float scoreToAdd)
+    {
+       score += scoreToAdd;
+       scoreText.text = score.ToString();
+
+        if( score>= 50)
+       {
+           WinUi.SetActive(true);
+           Debug.Log("Testing WIN screen !");
+           //gameOverUi.SetActive(false);
+           Time.timeScale= 0f;
+       }
 
     }
 
